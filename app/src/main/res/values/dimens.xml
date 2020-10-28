@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="size_hint_edt">18sp</dimen>
+    <dimen name="size_tv">16sp</dimen>
+    <dimen name="size_edt">18sp</dimen>
+    <dimen name="size_tv_logo">20sp</dimen>
+    <dimen name="size_imv_logo">90dp</dimen>
+
+    <dimen name="d_2">2dp</dimen>
+    <dimen name="d_4">4dp</dimen>
+    <dimen name="d_6">6dp</dimen>
+    <dimen name="d_8">8dp</dimen>
+    <dimen name="d_10">10dp</dimen>
+    <dimen name="d_12">12dp</dimen>
+    <dimen name="d_14">14dp</dimen>
+    <dimen name="d_16">16dp</dimen>
+    <dimen name="d_18">18dp</dimen>
+    <dimen name="d_20">20dp</dimen>
+    <dimen name="d_22">22dp</dimen>
+    <dimen name="d_24">24dp</dimen>
+    <dimen name="d_26">26dp</dimen>
+    <dimen name="d_28">28dp</dimen>
+    <dimen name="d_30">30dp</dimen>
+    <dimen name="d_32">32dp</dimen>
+    <dimen name="d_34">34dp</dimen>
+    <dimen name="d_36">36dp</dimen>
+    <dimen name="d_38">38dp</dimen>
+    <dimen name="d_40">40dp</dimen>
+    <dimen name="d_42">42dp</dimen>
+    <dimen name="d_44">44dp</dimen>
+    <dimen name="d_46">46dp</dimen>
+    <dimen name="d_48">48dp</dimen>
+    <dimen name="d_50">50dp</dimen>
+    <dimen name="d_52">52dp</dimen>
+    <dimen name="d_54">54dp</dimen>
+    <dimen name="d_56">56dp</dimen>
+    <dimen name="d_58">58dp</dimen>
+    <dimen name="d_60">60dp</dimen>
+    <dimen name="d_62">62dp</dimen>
+    <dimen name="d_64">64dp</dimen>
+    <dimen name="d_66">66dp</dimen>
+    <dimen name="d_68">68dp</dimen>
+    <dimen name="d_70">70dp</dimen>
+    <dimen name="d_72">72dp</dimen>
+    <dimen name="d_74">74dp</dimen>
+    <dimen name="d_76">76dp</dimen>
+    <dimen name="d_78">78dp</dimen>
+    <dimen name="d_80">80dp</dimen>
+    <dimen name="d_82">82dp</dimen>
+
+</resources>

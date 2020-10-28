@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGrey"
+    android:paddingLeft="@dimen/d_28"
+    android:paddingTop="@dimen/d_10"
+    android:paddingRight="@dimen/d_28"
+    android:paddingBottom="@dimen/d_10">
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/d_26"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_login_with"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d_16"
+        android:layout_marginTop="@dimen/d_30"
+        android:text="@string/login_with"
+        android:textColor="@color/colorDarkGray"
+        android:textSize="@dimen/size_tv"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_welcome" />
+
+    <TableRow
+        android:id="@+id/tr_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/d_16"
+        android:paddingTop="@dimen/d_16"
+        android:paddingRight="@dimen/d_16"
+        android:paddingBottom="@dimen/d_10"
+        app:layout_constraintTop_toBottomOf="@id/tv_login_with">
+
+        <ImageView
+            android:layout_width="@dimen/d_50"
+            android:layout_height="@dimen/d_50"
+            android:layout_gravity="center"
+            android:padding="@dimen/d_10"
+            android:src="@drawable/phone"
+            app:tint="@color/colorLightGray" />
+
+        <EditText
+            android:id="@+id/edt_username"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/d_16"
+            android:layout_weight="1"
+            android:background="@drawable/bg_light_grey"
+            android:hint="@string/hint_your_phone_number" />
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLightGray"
+        app:layout_constraintTop_toBottomOf="@id/tr_username" />
+
+    <TableRow
+        android:id="@+id/tr_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/d_16"
+        android:paddingTop="@dimen/d_16"
+        android:paddingRight="@dimen/d_16"
+        android:paddingBottom="@dimen/d_10"
+        app:layout_constraintTop_toBottomOf="@id/tr_username">
+
+        <ImageView
+            android:layout_width="@dimen/d_50"
+            android:layout_height="@dimen/d_50"
+            android:layout_gravity="center"
+            android:padding="@dimen/d_10"
+            android:src="@drawable/ic_lock"
+            app:tint="@color/colorLightGray" />
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/d_16"
+            android:layout_weight="1"
+            android:background="@drawable/bg_light_grey"
+            android:hint="@string/hint_password" />
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLightGray"
+        app:layout_constraintTop_toBottomOf="@id/tr_password" />
+
+    <TableRow
+        android:id="@+id/tr_remember_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/d_16"
+        android:paddingBottom="@dimen/d_16"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tr_password">
+
+        <ImageView
+            android:id="@+id/imv_remember_me"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:padding="@dimen/d_6"
+            android:src="@drawable/bg_level_remember_me"
+            app:tint="@color/colorYellow" />
+
+        <TextView
+            android:layout_marginLeft="@dimen/d_8"
+            android:text="@string/remember_me"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/size_tv" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/tv_forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_password"
+        android:textColor="@color/colorLightGray"
+        android:textSize="@dimen/size_tv"
+        app:layout_constraintBottom_toBottomOf="@id/tr_remember_me"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tr_password" />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_login"
+        android:elevation="@dimen/d_6"
+        android:gravity="center"
+        android:padding="@dimen/d_16"
+        android:text="@string/login"
+        android:textAllCaps="true"
+        android:textColor="@color/colorLightGrey"
+        android:textSize="@dimen/size_tv"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tr_remember_me" />
+
+    <TextView
+        android:id="@+id/tv_or_login_with"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d_30"
+        android:gravity="center"
+        android:text="@string/or_login_with"
+
+        android:textColor="@color/colorDarkGray"
+        android:textSize="@dimen/size_tv"
+        app:layout_constraintTop_toBottomOf="@id/tv_login" />
+
+    <TableRow
+        android:id="@+id/tr_social"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_80"
+        android:layout_marginTop="@dimen/d_30"
+        android:weightSum="3"
+        app:layout_constraintTop_toBottomOf="@id/tv_or_login_with">
+
+        <ImageView
+            android:id="@+id/imv_facebook"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/d_18"
+            android:layout_weight="1"
+            android:background="@drawable/bg_light_grey"
+            android:elevation="@dimen/d_2"
+            android:padding="@dimen/d_24"
+            android:src="@drawable/ic_facebook" />
+
+        <ImageView
+            android:id="@+id/imv_google"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/d_18"
+            android:layout_weight="1"
+            android:background="@drawable/bg_light_grey"
+            android:elevation="@dimen/d_2"
+            android:padding="@dimen/d_24"
+
+            android:src="@drawable/ic_google" />
+
+        <ImageView
+            android:id="@+id/imv_twitter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_light_grey"
+            android:elevation="@dimen/d_2"
+            android:padding="@dimen/d_24"
+            android:src="@drawable/ic_twitter" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/tv_have_not_accout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/not_a_Turino_user_yet"
+        android:textSize="@dimen/size_tv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d_4"
+        android:text="@string/sign_up_here"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/size_tv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tv_have_not_accout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
